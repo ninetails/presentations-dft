@@ -1,0 +1,10 @@
+{
+  "name": "presentations-dft",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "presentations/*"
+  ],
+  "repository": "ninetails/presentations-dft",
+  "license": "MIT"
+}

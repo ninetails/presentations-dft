@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.*rc*": true,
+    "**/.*ignore": true,
+    ".editorconfig": true,
+    ".vscode/": true,
+    ".yarn-offline/": true,
+    ".yarnrc.example": true,
+    "LICENSE": true,
+    "package.json": true,
+    "yarn.lock": true
+  },
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80
+  }
+}
