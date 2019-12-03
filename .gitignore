@@ -122,7 +122,7 @@ typings/
 # nuxt.js build output
 .nuxt
 
-# react / gatsby 
+# react / gatsby
 public/
 
 # vuepress build output
@@ -180,3 +180,6 @@ $RECYCLE.BIN/
 # Yarn Offline Mirror
 .yarnrc
 .yarn-offline
+
+# Build
+dist

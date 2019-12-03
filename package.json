@@ -2,9 +2,18 @@
   "name": "presentations-dft",
   "version": "0.0.0",
   "private": true,
-  "workspaces": [
-    "presentations/*"
-  ],
   "repository": "ninetails/presentations-dft",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^3.0.0"
+  },
+  "dependencies": {
+    "reveal-md": "^3.4.1"
+  },
+  "scripts": {
+    "clean": "rimraf dist node_modules || :",
+    "export": "reveal-md presentations --static dist",
+    "reset": "$npm_execpath run clean && $npm_execpath install",
+    "start": "reveal-md presentations"
+  }
 }
