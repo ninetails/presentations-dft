@@ -9,25 +9,25 @@ revealOptions:
 
 ---
 
-## Exercício (Venus)
+## [Exercício (Venus)](./exercicio-venus.html)
 
 ---
 
-## Bug Bash
+## [Bug Bash](./bug-bash.html)
 
 (draft)<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
-## Design System
+## [Design System](./design-system.html)
 
 ---
 
-## GitHub as *
+## [GitHub as *](./github-as-asterisk.html)
 
 ---
 
-## Guildas
+## [Guildas](./guildas.html)
 
 ---
 
