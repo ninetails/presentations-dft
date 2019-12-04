@@ -7,11 +7,11 @@ revealOptions:
 
 # Exercício (Venus)
 
-----
+---
 
 Tarefas no Jira
 
-----
+---
 
 É relacionado ao código?
 

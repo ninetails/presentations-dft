@@ -7,21 +7,27 @@ revealOptions:
 
 # Guildas
 
-----
+---
 
 Encontros que nem estes (+ Dextra)
 
-----
+---
 
 Frequência a ser definida
 
 <small><small><small>Quinzenal?</small></small></small><!-- .element: class="fragment" data-fragment-index="1" -->
 
-----
+---
 
 Usar forum?
 
 ----
+
+Usar o Forum pra devs
+
+(issues!)
+
+---
 
 Se crescer, usar [sli.do](https://www.sli.do/)
 

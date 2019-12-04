@@ -5,19 +5,19 @@ revealOptions:
   transition: 'slide'
 ---
 
-# GitHub as Forum
+# GitHub as *
 
-----
+---
 
 ## DFT DevHub
 
 (Nome a definir)<!-- .element: class="fragment" data-fragment-index="1" -->
 
-----
+---
 
 não esquecer do amiguinho backend
 
-----
+---
 
 centralizar coisas de dev no GitHub
 
@@ -33,25 +33,35 @@ ter histórico, tags etc
 
 💔<!-- .element: class="fragment" data-fragment-index="2" -->
 
-----
+---
 
-Dúvidas?
+Postar Dúvidas e gerar discussões?
 
 ![frontendbr forum preview](images/frontendbr.png)
 
 [frontendbr/forum](https://github.com/frontendbr/forum/issues)
 
-----
+---
 
-Links?
+Postar Links?
 
 ![braziljs weekly preview](images/braziljs.png)
 
 [BrazilJS/weekly](https://github.com/braziljs/weekly/issues?q=is%3Aissue+is%3Aclosed)
 
-----
+---
 
-Iniciativas?
+Eventos?
+
+![frontendbr eventos preview](images/frontendeventos.png)
+
+[frontendbr/eventos](https://github.com/frontendbr/eventos/issues)
+
+---
+
+Iniciativas internas?
+
+Eventos?<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ----
 

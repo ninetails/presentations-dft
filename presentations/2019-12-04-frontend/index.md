@@ -9,6 +9,28 @@ revealOptions:
 
 ---
 
+## Exercício (Venus)
+
+---
+
+## Bug Bash
+
+(draft)<!-- .element: class="fragment" data-fragment-index="1" -->
+
+---
+
+## Design System
+
+---
+
+## GitHub as *
+
+---
+
+## Guildas
+
+---
+
 <small><small>(btw essa apresentação foi feita na pressa só pra colher feedbacks)</small></small>
 
 ----

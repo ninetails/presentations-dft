@@ -7,21 +7,21 @@ revealOptions:
 
 # Design System
 
-----
+---
 
 Mas já temos um repositório de componentes!
 
-----
+---
 
 Tem que ser algo em conjunto com o time de UI/UX
 
-----
+---
 
 ## [O que é, e porque criar um Design System?](https://uxdesign.blog.br/design-system-90036c034225)
 
 ![preview](https://miro.medium.com/max/1594/1*MV3ck0Fc4fZH81PLn5SdYA.jpeg)
 
-----
+---
 
 ## [Building a Visual Language](https://airbnb.design/building-a-visual-language/)
 
@@ -29,7 +29,7 @@ Tem que ser algo em conjunto com o time de UI/UX
 
 Airbnb
 
-----
+---
 
 Por que não migrar o existente?
 
@@ -45,19 +45,19 @@ Tem que surgir junto com eles
 
 <small><small>mas na verdade vamos<br />fazer `Ctrl+C`/`Ctrl+V`</small></small>
 
-----
+---
 
-Aproveitar o redesign da Dafiti
+Aproveitar o redesign do site
 
-----
+---
 
 > Tornar um lugar como verdade para o desenvolvimento de interfaces web
 
-----
+---
 
-v0
+## v0
 
-----
+---
 
 - Guidelines para Design E Frontend
 - Showcase de componentes<!-- .element: class="fragment" data-fragment-index="1" -->
@@ -70,22 +70,22 @@ v0
     - Acessibilidade<!-- .element: class="fragment" data-fragment-index="8" -->
     - Segurança<!-- .element: class="fragment" data-fragment-index="9" -->
 
-----
+---
 
 > Novo design usar Design System !== Design System ser o novo design
 
-----
+---
 
 Preview (Storybook):
 - em diferentes temas<!-- .element: class="fragment" data-fragment-index="1" -->
 - em diferentes viewports<!-- .element: class="fragment" data-fragment-index="2" -->
 - em diferentes idiomas<!-- .element: class="fragment" data-fragment-index="4" -->
 
-----
+---
 
 **Prismic**
 
-----
+---
 
 Não esquecer
 - Multisite<!-- .element: class="fragment" data-fragment-index="1" -->
@@ -99,7 +99,7 @@ Não esquecer
 
 ![The Brain](https://i.pinimg.com/originals/76/cb/c1/76cbc138de06cca4563c2cf10510b35f.jpg)
 
-----
+---
 
 ## Referências
 
