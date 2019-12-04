@@ -1,3 +1,10 @@
+---
+title: Guildas
+theme: night
+revealOptions:
+  transition: 'slide'
+---
+
 # Guildas
 
 ----
