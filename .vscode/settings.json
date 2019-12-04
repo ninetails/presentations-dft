@@ -7,6 +7,7 @@
     ".vscode/": true,
     ".yarn-offline/": true,
     ".yarnrc.example": true,
+    "dist": true,
     "LICENSE": true,
     "package.json": true,
     "yarn.lock": true
