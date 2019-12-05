@@ -5,7 +5,7 @@ revealOptions:
   transition: 'slide'
 ---
 
-# Frontend Proposals
+# Proposals
 
 ---
 
