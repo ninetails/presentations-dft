@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Guildas</title>
+    <link rel="stylesheet" href="./../css/reveal.css" />
+    <link rel="stylesheet" href="./../css/theme/night.css" id="theme" />
+    <link rel="stylesheet" href="./../css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./../css/print/paper.css" type="text/css" media="print" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+# Coding Dojo
+</script></section><section ><section data-markdown><script type="text/template">
+![Dojo](https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Noma_Dojo%2C_2006.JPG/800px-Noma_Dojo%2C_2006.JPG)
+</script></section><section data-markdown><script type="text/template">
+> Dojo é o local onde se treinam artes marciais japonesas.
+</script></section></section><section ><section data-markdown><script type="text/template">
+> Lugar de iluminação
+</script></section><section data-markdown><script type="text/template">
+![namaste](https://cdn.pixabay.com/photo/2016/12/28/11/32/namaste-1935938_960_720.jpg)
+</script></section></section><section  data-markdown><script type="text/template">
+## Formatos
+</script></section><section ><section data-markdown><script type="text/template">
+### Kata
+</script></section><section data-markdown><script type="text/template">
+> Alguém apresenta uma solução pronta previamente desenvolvida e que utilizou algum tipo de teste
+</script></section></section><section ><section data-markdown><script type="text/template">
+### Randori
+</script></section><section data-markdown><script type="text/template">
+![howto](https://image.slidesharecdn.com/codingdojo-111117160908-phpapp02/95/coding-dojo-35-728.jpg?cb=1321546270)
+</script></section><section data-markdown><script type="text/template">
+- Depois dos 5 minutos só passa a vez se estiver <span style="color:green;font-weight:bold;">VERDE</span>
+<li class="fragment">Platéia não fala com os coders enquanto estiver <span style="color:red;font-weight:bold;">VERMELHO</span></li>
+<li class="fragment"><small>Ou seja, por favor, falem entre si porém baixo.</small></li>
+</script></section><section data-markdown><script type="text/template">
+- Não tragam problemas de fora
+- É um local de treinamento 🙏<!-- .element: class="fragment" -->
+- Não necessariamente precisa ser na linguagem que todos estão acostumados<!-- .element: class="fragment" -->
+- Inclusivo<!-- .element: class="fragment" -->
+</script></section></section><section ><section data-markdown><script type="text/template">
+## Agenda
+
+- Apresentação de 1 a 2 Katas
+- Restante do tempo focar no Randori<!-- .element: class="fragment" -->
+- Retrospectiva<!-- .element: class="fragment" -->
+</script></section><section data-markdown><script type="text/template">
+- Não se preocupe em terminar o problema
+- Estamos todos para treinar... DOJO<!-- .element: class="fragment" -->
+<li class="fragment"><strong>"Não importa o destino e sim a jornada"</strong> - gle, Goo</li>
+- Não tenha medo de errar<!-- .element: class="fragment" -->
+- ...mas também lembre que ninguém aqui sabe mais que ninguém<!-- .element: class="fragment" -->
+</script></section></section><section  data-markdown><script type="text/template">
+## Vamos aplicar TDD
+</script></section><section  data-markdown><script type="text/template">
+![lembrete](https://miro.medium.com/max/996/1*pP8Ks6tlt718jJg3fqrtvw.jpeg)
+</script></section><section ><section data-markdown><script type="text/template">
+### Baby Steps
+</script></section><section data-markdown><script type="text/template">
+![kids](https://media.giphy.com/media/qCTaz2coxAJCE/giphy.gif)
+</script></section></section><section ><section data-markdown><script type="text/template">
+#### Exemplo simples: Fatorial
+</script></section><section data-markdown><script type="text/template">
+```js
+describe('fatorial', () => {
+  test('0! = 1', () => expect(factorial(0)).toBe(1))
+})
+```
+</script></section><section data-markdown><script type="text/template">
+> <span style="color:red;font-weight:bold;">FAIL!</span>
+</script></section><section data-markdown><script type="text/template">
+```js
+function factorial (num) {
+  return 1
+}
+```
+</script></section><section data-markdown><script type="text/template">
+> <span style="color:green;font-weight:bold;">PASS!</span>
+</script></section><section data-markdown><script type="text/template">
+```js
+describe('fatorial', () => {
+  test('0! = 1', () => expect(factorial(0)).toBe(1))
+  test('1! = 1', () => expect(factorial(1)).toBe(1))
+})
+```
+</script></section><section data-markdown><script type="text/template">
+> <span style="color:green;font-weight:bold;">PASS!</span>
+</script></section><section data-markdown><script type="text/template">
+```js
+function factorial (num) {
+  return 1
+}
+```
+</script></section><section data-markdown><script type="text/template">
+```js
+describe('fatorial', () => {
+  test('0! = 1', () => expect(factorial(0)).toBe(1))
+  test('1! = 1', () => expect(factorial(1)).toBe(1))
+  test('2! = 2', () => expect(factorial(2)).toBe(2))
+})
+```
+</script></section><section data-markdown><script type="text/template">
+> <span style="color:red;font-weight:bold;">FAIL!</span>
+</script></section><section data-markdown><script type="text/template">
+```js
+function factorial (num) {
+  if (num < 2) {
+    return 1
+  }
+
+  return 2
+}
+```
+</script></section><section data-markdown><script type="text/template">
+> <span style="color:green;font-weight:bold;">PASS!</span>
+</script></section><section data-markdown><script type="text/template">
+```js
+describe('fatorial', () => {
+  test('0! = 1', () => expect(factorial(0)).toBe(1))
+  test('1! = 1', () => expect(factorial(1)).toBe(1))
+  test('2! = 2', () => expect(factorial(2)).toBe(2))
+  test('3! = 6', () => expect(factorial(3)).toBe(6))
+})
+```
+</script></section><section data-markdown><script type="text/template">
+> <span style="color:red;font-weight:bold;">FAIL...</span>
+</script></section><section data-markdown><script type="text/template">
+> Faremos mais um **if**?
+</script></section><section data-markdown><script type="text/template">
+**Acabei de ganhar 3 testes na minha suite! 🙌**
+</script></section><section data-markdown><script type="text/template">
+![Break dance](https://media.giphy.com/media/TZFsJcj0Whc88/giphy.gif)
+</script></section></section><section ><section data-markdown><script type="text/template">
+## Referências
+</script></section><section data-markdown><script type="text/template">
+Wikipedia
+
+https://pt.wikipedia.org/wiki/Coding_Dojo
+</script></section><section data-markdown><script type="text/template">
+http://codingdojo.org/
+</script></section></section><section ><section data-markdown><script type="text/template">
+Por que expliquei Randori?
+
+(nós vamos pular o primeiro Kata)<!-- .element: class="fragment" -->
+
+<small>(não contem pra ninguém)</small><!-- .element: class="fragment" -->
+</script></section><section data-markdown><script type="text/template">
+Traga um **Kata** no próximo Dojo 🙋
+</script></section></section><section ><section data-markdown><script type="text/template">
+## Nosso primeiro problema
+</script></section><section data-markdown><script type="text/template">
+> (・ｗ・）
+</script></section><section data-markdown><script type="text/template">
+[FizzBuzz](http://dojopuzzles.com/problemas/exibe/fizzbuzz/)
+
+em JavaScript<!-- .element: class="fragment" -->
+</script></section><section data-markdown><script type="text/template">
+- Nosso programa deve imprimir uma lista de números, um por linha
+<li class="fragment">Se o número for divisível por <strong>3</strong>, deve imprimir <strong>"Fizz"</strong> ao invés do número</li>
+<li class="fragment">Se for divisível por <strong>5</strong>, imprime <strong>"Buzz"</strong> ao invés do número</li>
+<li class="fragment">Se for divisível por <strong>3</strong> e por <strong>5</strong>, imprime <strong>"FizzBuzz"</strong></li>
+</script></section><section data-markdown><script type="text/template">
+```
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+```
+</script></section><section data-markdown><script type="text/template">
+```
+...
+11
+Fizz
+13
+14
+FizzBuzz
+16
+17
+Fizz
+19
+Buzz
+```
+</script></section><section data-markdown><script type="text/template">
+e por aí vai...
+</script></section></section></div>
+    </div>
+
+    <script src="./../js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './../plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './../plugin/zoom-js/zoom.js', async: true },
+        { src: './../plugin/notes/notes.js', async: true },
+        { src: './../plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"transition":"slide"}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
